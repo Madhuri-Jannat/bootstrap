@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <table class="table table-success table-striped">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Mahi</td>
+                <td>mahi@gamil.com</td>
+                <td>
+                    <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-title="edit"
+                        data-bs-placement="top" edit><i class="bi bi-pencil-square"></i> </button>
+                    <button type="button" class="btn btn-danger"><i class="bi bi-archive"></i></button>
+                    <button type="button" class="btn btn-info"><i class="bi bi-emoji-heart-eyes"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Nisad</td>
+                <td>nisad@gamil.com</td>
+                <td>
+                    <button type="button" class="btn btn-success" data-bs-toggle="tooltip" title="edit"
+                        data-bs-placement="top">Edit </button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-info">view</button>
+                </td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Rahi</td>
+                <td>rahi@gamil.com</td>
+                <td>
+                    <button type="button"> <i class="bi bi-pencil"></i></button>
+                    <button type="button"> <i class="bi bi-trash3"></i></button>
+                    <button type="button"> <i class="bi bi-eye-fill"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Ruhi</td>
+                <td>
+                    ruhi@gmail.com
+                </td>
+                <td>
+                    <button type="button" class="btn btn-success">Edit </button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-info">view</button>
+                </td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Bela</td>
+                <td>bela@gamil.com</td>
+                <td><button type="button" class="btn btn-success"><i class="bi bi-pencil-square"></i> </button>
+                    <button type="button" class="btn btn-danger"><i class="bi bi-archive"></i></button>
+                    <button type="button" class="btn btn-info"><i class="bi bi-emoji-heart-eyes"></i></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
