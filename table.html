@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <table class="table table-striped">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>sumi</td>
+                <td>989403859</td>
+                <td>
+                    <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-title="edit">
+                        Edit</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-title="Delete">
+                        Delete</button>
+                    <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-title="view">
+                        View</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>sumi</td>
+                <td>989403859</td>
+                <td>
+                    <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-title="Edit">
+                        <i class="bi bi-pencil-fill"></i></button>
+
+                    <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-title="Delete">
+                        <i class="bi bi-archive-fill"></i></button>
+                    <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="Right"
+                        data-bs-title="view">
+                        <i class="bi bi-eye-fill"></i></button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>sumi</td>
+                <td>989403859</td>
+                <td>
+                    <button type="button"><i class="bi bi-pencil-fill" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-title="edit">
+                        </i></button>
+                    <button type="button"><i class="bi bi-archive-fill" data-bs-toggle="tooltip"
+                            data-bs-placement="left" data-bs-title="Delete">
+                        </i></button>
+                    <button type="button"><i class="bi bi-eye-fill" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-title="view">
+                        </i></button>
+                </td>
+
+            </tr>
+
+        </table>
+    </div>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
