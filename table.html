@@ -26,9 +26,27 @@
                     <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top"
                         data-bs-title="edit">
                         Edit</button>
-                    <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
-                        data-bs-title="Delete">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#sm">
                         Delete</button>
+                    <div class="modal" tabindex="-1" id="sm">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top"
                         data-bs-title="view">
                         View</button>
@@ -44,9 +62,23 @@
                         data-bs-title="Edit">
                         <i class="bi bi-pencil-fill"></i></button>
 
-                    <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"
-                        data-bs-title="Delete">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete">
                         <i class="bi bi-archive-fill"></i></button>
+                    <div class="modal" tabindex="-1" id="delete">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-body">
+                                    <p>Are you sure!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-danger">delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="Right"
                         data-bs-title="view">
                         <i class="bi bi-eye-fill"></i></button>
@@ -62,8 +94,27 @@
                             data-bs-title="edit">
                         </i></button>
                     <button type="button"><i class="bi bi-archive-fill" data-bs-toggle="tooltip"
-                            data-bs-placement="left" data-bs-title="Delete">
+                            data-bs-placement="left" data-bs-title="Delete" data-bs-toggle="modal" data-bs-target="#delete">
                         </i></button>
+                    <div class="modal" tabindex="-1" delete>
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <button type="button"><i class="bi bi-eye-fill" data-bs-toggle="tooltip" data-bs-placement="left"
                             data-bs-title="view">
                         </i></button>
