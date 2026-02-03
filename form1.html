@@ -39,8 +39,27 @@
                     <input type="checkbox" name="" id="">HTML
                     <input type="checkbox" name="" id="">CSS
                     <input type="checkbox" name="" id="">bootstrap <br> <br>
-                    <input type="submit">
-                    <input type="reset"> <br>
+                    <button type="submit" class="btn btn-success">submit</button>
+                    <button type="reset" class="btn btn-primary">reset</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+                    <div class="modal" tabindex="-1" id="exampleModal"
+                    >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
                 </form>
